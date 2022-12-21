@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="">
+        <label for="email">Email: </label>
+        <input id="email" name="email" type="email">
+
+        <button>Add Task</button>
+    </form>
+    <h1 id="showEmail" class="main-text">No text found</h1> -->
+
+    <div id="app">
+        <input v-on:input="handleInput">
+        <h1>Your emails is: {{email}}</h1>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="script.js"></script>
+</body>
+</html>

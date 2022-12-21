@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/vue@3"></script>     <!--development version-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="app">
+        <!-- <h3>Introduction</h3>
+        <p>{{message}}</p>
+        <p>{{rreshti1}}</p>
+         -->
+        <h1 v-text="sitename"></h1>
+        <h2 v-text="product.title"></h2>
+        <p v-text="product.storage"></p>
+        <p v-text="product.color"></p>
+        <p v-bind="scr=''"></p>
+
+
+    </div>
+    <div id="app-to-app">
+        <button @click="count++">
+             Count is: {{ count }} 
+            </button>
+    </div>
+     <script> 
+        
+            
+    
+        Vue.createApp({
+         data(){
+             return{
+                 count:1
+             }
+         }
+        
+     })    
+     .mount('#app-to-app')
+     
+      </script> 
+<script>
+
+   const introApp = Vue.createApp({
+    data(){
+        return{
+            message:"Welcome to Vuejs 3",
+            rreshti1: "Hello guys, UBT",
+            rreshti3: "hellooo",
+            sitename:"Mobile Shop",
+            product:{id:101, title:'Iphone 14 Pro Max', storage:"Last Iphone", color:"red"}
+        }
+    }
+   
+})    
+.mount('#app')
+
+ </script>
+</body>
+</html>
